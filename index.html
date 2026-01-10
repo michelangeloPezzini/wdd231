@@ -2,10 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="WDD231 Home Page - Web and Computer Programming">
+    <meta name="author" content="Michelangelo Pezzini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>WDD231 - Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    
+
+<header>
+    <div class="header-content">
+        <img src="images/logo.svg" alt="Image logo">
+        <span>Michelangelo Pezzini</span>
+    </div>
+</header>
+
+<nav id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+</nav>
+
+<main>
+    <h1>Home</h1>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a student of Software Development at BYU Idaho and work as a Support Engineer at SAP.        
+        </p>
+    </section>
+
+    <section class="photo">
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Student Photo">
+    </section>
+
+    <section class="courses">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="CSE">CSE</button>
+            <button data-filter="WDD">WDD</button>
+        </div>
+
+        <div id="courseList"></div>
+        <p id="credits"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="social">
+        <a href="https://github.com/michelangeloPezzini" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/michelangelo-pezzini-820591185/" target="_blank">LinkedIn</a>
+    </div>
+
+    <p>
+        © <span id="year"></span> • Michelangelo • RS, Brazil
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
 </body>
 </html>

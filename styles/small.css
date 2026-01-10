@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #14002D;
+    color: #EAD9C6;
+}
+
+header {
+    background: #0B0B0F;
+    color: #F4EDE4;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-content img {
+    width: 40px;
+}
+
+
+#menu {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 1.5rem;
+    color: #F4EDE4;
+}
+
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #0B0B0F;
+}
+
+nav a {
+    color: #F4EDE4;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #7B4AE2;
+    color: #FFFFFF;
+}
+
+nav.show {
+    display: flex;
+}
+
+
+main {
+    padding: 1rem;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about h2,
+.photo h2,
+.courses h2 {
+    background-color: #7B4AE2;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.about p {
+    background-color: #F4EDE4;
+    color: #1A1A1A;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+
+.photo img {
+    width: 200px;
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+.filters button {
+    margin: 0.25rem;
+    background-color: #F4EDE4;
+    color: #1A1A1A;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #7B4AE2;
+    color: #FFFFFF;
+}
+
+
+.course {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #F4EDE4;
+    color: #1A1A1A;
+    border-radius: 6px;
+}
+
+.course.completed {
+    background: #D8C7F0;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+
+footer {
+    background: #0B0B0F;
+    color: #F4EDE4;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .about, .photo {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+}
