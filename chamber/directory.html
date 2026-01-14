@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tokyo Chamber of Commerce | Directory</title>
+  <meta name="description" content="Business directory of Tokyo Chamber of Commerce.">
+  <meta name="author" content="Michelangelo Pezzini">
+
+  <meta property="og:title" content="Tokyo Chamber of Commerce">
+  <meta property="og:description" content="Connecting local businesses in Tokyo.">
+  <meta property="og:image" content="https://michelangelo.pezzini.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://michelangelopezzini.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css">
+</head>
+
+<body>
+    <header>
+    <h1>Tokyo Chamber of Commerce</h1>
+    <nav>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+    <section class="view-buttons">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+    </section>
+
+    <section id="members" class="grid">
+
+    </section>
+    </main>
+    <footer>
+    <p>Tokyo Chamber of Commerce</p>
+    <p>Tokyo - Japan</p>
+    <p>Email: info@tokyocc.org</p>
+
+    <p>
+        © <span id="year"></span> | Michelangelo Pezzini | WDD 231
+    </p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/directory.js"></script>
+
+</body>
+</html>

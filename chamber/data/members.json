@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tokyo Tech Solutions",
+    "address": "1-1 Chiyoda, Tokyo, Japan",
+    "phone": "+81 3-1234-5678",
+    "website": "https://tokyotechsolutions.jp",
+    "image": "tech.png",
+    "membership": 3,
+    "description": "Enterprise technology consulting and cloud services."
+  },
+  {
+    "name": "Sakura Marketing Group",
+    "address": "2-15 Shibuya, Tokyo, Japan",
+    "phone": "+81 3-2234-8899",
+    "website": "https://sakuramarketing.jp",
+    "image": "marketing.png",
+    "membership": 2,
+    "description": "Digital marketing and branding solutions for local businesses."
+  },
+  {
+    "name": "Neo Tokyo Finance",
+    "address": "8-22 Minato, Tokyo, Japan",
+    "phone": "+81 3-9988-7766",
+    "website": "https://neotokyofinance.jp",
+    "image": "finance.png",
+    "membership": 3,
+    "description": "Financial advisory and investment services."
+  },
+  {
+    "name": "Zen Architecture Studio",
+    "address": "5-9 Meguro, Tokyo, Japan",
+    "phone": "+81 3-4455-1122",
+    "website": "https://zenarchitecture.jp",
+    "image": "architecture.png",
+    "membership": 1,
+    "description": "Modern and sustainable architectural design."
+  },
+  {
+    "name": "Tokyo Gourmet Imports",
+    "address": "12-3 Setagaya, Tokyo, Japan",
+    "phone": "+81 3-3344-5566",
+    "website": "https://tokyogourmet.jp",
+    "image": "gourmet.png",
+    "membership": 2,
+    "description": "Import and distribution of premium gourmet products."
+  },
+  {
+    "name": "Shinjuku Fitness Center",
+    "address": "9-18 Shinjuku, Tokyo, Japan",
+    "phone": "+81 3-6677-8899",
+    "website": "https://shinjukufitness.jp",
+    "image": "fitness.png",
+    "membership": 1,
+    "description": "Fitness, wellness, and personal training services."
+  },
+  {
+    "name": "Koi Creative Studio",
+    "address": "6-30 Akihabara, Tokyo, Japan",
+    "phone": "+81 3-7788-9900",
+    "website": "https://koicreative.jp",
+    "image": "creative.png",
+    "membership": 2,
+    "description": "Graphic design, UX/UI, and creative branding."
+  }
+]
