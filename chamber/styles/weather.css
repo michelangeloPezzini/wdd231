@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+
+.hero-text h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background: orange;
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: darkorange;
+}
+
+.events,
+.weather,
+.spotlights {
+  background: #222;
+  color: white;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+  color: orange;
+  margin-top: 0;
+}
+
+
+.events p,
+.weather p,
+.weather li {
+  color: #f5f5f5;
+}
+
+#forecast {
+  list-style: none;
+  padding: 0;
+}
+
+#forecast li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+#spotlight-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.spotlight-card {
+  background: white;
+  color: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.spotlight-card img {
+  max-width: 120px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.spotlight-card a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  #spotlight-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 250px;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 4.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+}

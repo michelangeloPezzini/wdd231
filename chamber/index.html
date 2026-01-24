@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tokyo Chamber of Commerce | Directory</title>
+  <meta name="description" content="Official business directory of the Tokyo Chamber of Commerce, connecting local companies, services, and opportunities.">
+  <meta name="author" content="Michelangelo Pezzini">
+
+  <meta property="og:title" content="Tokyo Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Explore the official Tokyo Chamber of Commerce business directory and discover local companies, services, and partnerships.">
+  <meta property="og:image" content="https://michelangelopezzini.github.io/wdd231/chamber/og-image.jpg">
+  <meta property="og:url" content="https://michelangelopezzini.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/weather.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/logo.svg" alt="Image logo">
+            <span>Tokyo Chamber of Commerce</span>
+            <button id="menu" aria-label="Open Menu"></button>
+        </div>
+    </header>
+
+    <nav id="navMenu">
+    <a href="../index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="#" class="active">Chamber</a>
+    <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+        <div class="hero-content">
+            <h2>Supporting Business in Tokyo</h2>
+            <a class="cta" href="join.html">Join the Chamber</a>
+        </div>
+        </section>
+
+        <section class="events">
+        <h2>Current Events</h2>
+        <p>📢 Upcoming Business Expo - February 2026</p>
+        <p>🎉 Tokyo Winter Market Networking Night</p>
+        </section>
+
+        <section class="weather">
+        <h2>Weather in Trier</h2>
+        <p>Current Temperature: <span id="current-temp"></span></p>
+        <p>Condition: <span id="weather-desc"></span></p>
+
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast"></ul>
+        </section>
+        
+        <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-cards"></div>
+        </section>
+    </main>
+    <footer>
+    <p>Tokyo Chamber of Commerce</p>
+    <p>Tokyo - Japan</p>
+    <p>Email: info@tokyocc.org</p>
+
+    <p>
+        © <span id="year"></span> | Michelangelo Pezzini | WDD 231
+    </p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+
+
+</body>
+</html>

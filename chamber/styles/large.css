@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .hero {
+    grid-column: span 2;
+  }
+
+  .spotlights {
+    grid-column: span 2;
+  }
+
+  #spotlight-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .spotlight-card {
+    width: 30%;
+  }
+}

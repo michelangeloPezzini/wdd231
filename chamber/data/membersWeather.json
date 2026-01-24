@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "name": "Trier Bakery",
+      "logo": "images/bakery.png",
+      "phone": "+49 123 456 789",
+      "address": "Main Street 12, Trier",
+      "website": "https://trierbakery.de",
+      "level": "Gold"
+    },
+    {
+      "name": "Porta Tech Solutions",
+      "logo": "images/tech.png",
+      "phone": "+49 987 654 321",
+      "address": "Innovation Ave 5, Trier",
+      "website": "https://portatech.de",
+      "level": "Silver"
+    },
+    {
+      "name": "Mosel Tourism Group",
+      "logo": "images/tourism.png",
+      "phone": "+49 555 333 222",
+      "address": "River Road 9, Trier",
+      "website": "https://moseltourism.de",
+      "level": "Bronze"
+    }
+  ]
+}

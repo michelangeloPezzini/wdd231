@@ -1,0 +1,25 @@
+{
+  "family_name": "Gomez",
+  "move_in_date": "2025-12-01",
+  "number_of_people": 2,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": "Carlos Gomez",
+      "gender": "Male",
+      "birthdate": "1988-02-20"
+    },
+    {
+      "name": "Ana Gomez",
+      "gender": "Female",
+      "birthdate": "1990-07-30"
+    }
+  ],
+  "address": {
+    "street": "Avenida Nueva 55",
+    "city": "Riviera",
+    "state": "TX",
+    "postal_code": "73301-000",
+    "country": "United States"
+  }
+}
