@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tokyo Chamber of Commerce | Directory</title>
+    <meta
+      name="description"
+      content="Official business directory of the Tokyo Chamber of Commerce, connecting local companies, services, and opportunities."
+    />
+    <meta name="author" content="Michelangelo Pezzini" />
+
+    <meta
+      property="og:title"
+      content="Tokyo Chamber of Commerce Business Directory"
+    />
+    <meta
+      property="og:description"
+      content="Explore the official Tokyo Chamber of Commerce business directory and discover local companies, services, and partnerships."
+    />
+    <meta
+      property="og:image"
+      content="https://michelangelopezzini.github.io/wdd231/chamber/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://michelangelopezzini.github.io/wdd231/chamber/directory.html"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/weather.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="../images/logo.svg" alt="Image logo" />
+        <span>Tokyo Chamber of Commerce</span>
+        <button id="menu" aria-label="Open Menu"></button>
+      </div>
+    </header>
+
+    <nav id="navMenu">
+      <a href="../index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="index.html" >Chamber</a>
+      <a href="#" class="active">Join</a>
+    </nav>
+
+    <main class="join-page">
+      <h1>Join the Tokyo Chamber</h1>
+
+      <div class="join-layout">
+        <form method="get" action="thankyou.html" class="join-form">
+          <label>
+            First Name:
+            <input
+              type="text"
+              name="fname"
+              title="Enter your first name"
+              autocomplete="given-name"
+              required
+            />
+          </label>
+
+          <label>
+            Last Name:
+            <input
+              type="text"
+              name="lname"
+              title="Enter your last name"
+              autocomplete="family-name"
+              required
+            />
+          </label>
+
+          <label>
+            Organizational Title:
+            <input
+              type="text"
+              name="orgtitle"
+              title="Your title within the organization"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\-\s]{7,}"
+            />
+          </label>
+
+          <label>
+            Email Address:
+            <input
+              type="email"
+              name="email"
+              title="Enter a valid email"
+              autocomplete="email"
+              placeholder="example@business.com"
+              required
+            />
+          </label>
+
+          <label>
+            Mobile Phone:
+            <input
+              type="tel"
+              name="phone"
+              title="Enter your mobile number"
+              autocomplete="tel"
+              required
+            />
+          </label>
+
+          <label>
+            Business/Organization Name:
+            <input
+              type="text"
+              name="business"
+              title="Enter your organization name"
+              autocomplete="organization"
+              required
+            />
+          </label>
+
+          <label>
+            Membership Level:
+            <select name="membership" required>
+              <option value="">Choose One...</option>
+              <option value="np">NP Membership (Free)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business Description:
+            <textarea
+              name="description"
+              title="Describe your organization"
+              rows="5"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp" />
+
+          <input type="submit" value="Apply for Membership" />
+        </form>
+
+        <section class="membership-cards">
+          <div class="card">
+            <h3>NP Membership</h3>
+            <a href="#npModal">View Benefits</a>
+          </div>
+
+          <div class="card">
+            <h3>Bronze Membership</h3>
+            <a href="#bronzeModal">View Benefits</a>
+          </div>
+
+          <div class="card">
+            <h3>Silver Membership</h3>
+            <a href="#silverModal">View Benefits</a>
+          </div>
+
+          <div class="card">
+            <h3>Gold Membership</h3>
+            <a href="#goldModal">View Benefits</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <dialog id="npModal">
+      <h2>NP Membership Benefits</h2>
+      <p>✔ Free membership for nonprofits</p>
+      <p>✔ Access to community events</p>
+      <button onclick="document.getElementById('npModal').close()">
+        Close
+      </button>
+    </dialog>
+    <dialog id="bronzeModal">
+  <h2>Bronze Membership Benefits</h2>
+  <p>✔ Access to networking events</p>
+  <p>✔ Business listing in directory</p>
+  <p>✔ Monthly training workshops</p>
+
+  <button onclick="document.getElementById('bronzeModal').close()">
+    Close
+  </button>
+</dialog>
+<dialog id="silverModal">
+  <h2>Silver Membership Benefits</h2>
+  <p>✔ All Bronze benefits</p>
+  <p>✔ Spotlight advertising opportunities</p>
+  <p>✔ Discounts on chamber events</p>
+
+  <button onclick="document.getElementById('silverModal').close()">
+    Close
+  </button>
+</dialog>
+<dialog id="goldModal">
+  <h2>Gold Membership Benefits</h2>
+  <p>✔ All Silver benefits</p>
+  <p>✔ Featured homepage spotlight position</p>
+  <p>✔ VIP access to exclusive events</p>
+  <p>✔ Personalized business promotion</p>
+
+  <button onclick="document.getElementById('goldModal').close()">
+    Close
+  </button>
+</dialog>
+
+
+
+
+    <footer>
+      <p>Tokyo Chamber of Commerce</p>
+      <p>Tokyo - Japan</p>
+      <p>Email: info@tokyocc.org</p>
+
+      <p>© <span id="year"></span> | Michelangelo Pezzini | WDD 231</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/join.js" defer></script>
+
+  </body>
+</html>

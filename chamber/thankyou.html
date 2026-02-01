@@ -22,8 +22,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/chamber.css">
   <link rel="stylesheet" href="styles/weather.css">
-  <link rel="stylesheet" href="styles/large.css">
-
+  <link rel="stylesheet" href="styles/join.css">
 
 </head>
 
@@ -39,38 +38,25 @@
     <nav id="navMenu">
     <a href="../index.html">Home</a>
     <a href="directory.html">Directory</a>
-    <a href="#" class="active">Chamber</a>
+    <a href="index.html">Chamber</a>
     <a href="join.html">Join</a>
     </nav>
+  <main class="join-page">
+    <h1>Thank You for Joining!</h1>
 
-    <main>
-        <section class="hero">
-        <div class="hero-content">
-            <h2>Supporting Business in Tokyo</h2>
-            <a class="cta" href="join.html">Join the Chamber</a>
-        </div>
-        </section>
+    <p>Your application has been submitted successfully.</p>
 
-        <section class="events">
-        <h2>Current Events</h2>
-        <p>📢 Upcoming Business Expo - February 2026</p>
-        <p>🎉 Tokyo Winter Market Networking Night</p>
-        </section>
+    <section class="application-summary">
+      <h2>Submitted Information</h2>
 
-        <section class="weather">
-        <h2>Weather in Trier</h2>
-        <p>Current Temperature: <span id="current-temp"></span></p>
-        <p>Condition: <span id="weather-desc"></span></p>
+      <ul id="results"></ul>
+    </section>
 
-        <h3>3-Day Forecast</h3>
-        <ul id="forecast"></ul>
-        </section>
-        
-        <section class="spotlights">
-        <h2>Member Spotlights</h2>
-        <div id="spotlight-cards"></div>
-        </section>
-    </main>
+    <a class="back-btn" href="../index.html">← Back to Home Page</a>
+
+  </main>
+
+
     <footer>
     <p>Tokyo Chamber of Commerce</p>
     <p>Tokyo - Japan</p>
@@ -87,6 +73,9 @@
     <script src="scripts/dates.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/spotlights.js"></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+
 
 
 </body>
