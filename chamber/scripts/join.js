@@ -1,6 +1,3 @@
-// ================================
-// JOIN PAGE MODALS SCRIPT
-// ================================
 
 document.querySelectorAll(".card a").forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -11,12 +8,23 @@ document.querySelectorAll(".card a").forEach((link) => {
   });
 });
 
-// ================================
-// TIMESTAMP FIELD AUTO-FILL
-// ================================
+
 
 const timestampField = document.getElementById("timestamp");
 
 if (timestampField) {
   timestampField.value = new Date().toISOString();
 }
+
+
+document.querySelectorAll(".close-modal").forEach((button) => {
+  button.addEventListener("click", () => {
+    button.closest("dialog").close();
+  });
+});
+
+document.querySelectorAll("dialog").forEach((dialog) => {
+  dialog.addEventListener("click", (e) => {
+    if (e.target === dialog) dialog.close();
+  });
+});

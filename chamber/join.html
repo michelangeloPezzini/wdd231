@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tokyo Chamber of Commerce | Directory</title>
+    <title>Tokyo Chamber of Commerce | Join</title>
     <meta
       name="description"
       content="Official business directory of the Tokyo Chamber of Commerce, connecting local companies, services, and opportunities."
@@ -55,7 +55,7 @@
       <a href="../index.html">Home</a>
       <a href="directory.html">Directory</a>
       <a href="index.html" >Chamber</a>
-      <a href="#" class="active">Join</a>
+      <a href="join.html" class="active">Join</a>
     </nav>
 
     <main class="join-page">
@@ -178,44 +178,39 @@
         </section>
       </div>
     </main>
-    <dialog id="npModal">
-      <h2>NP Membership Benefits</h2>
-      <p>✔ Free membership for nonprofits</p>
-      <p>✔ Access to community events</p>
-      <button onclick="document.getElementById('npModal').close()">
-        Close
-      </button>
-    </dialog>
-    <dialog id="bronzeModal">
+<dialog id="npModal">
+  <h2>NP Membership Benefits</h2>
+  <p>✔ Free membership for nonprofits</p>
+  <p>✔ Access to community events</p>
+  <button class="close-modal">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
   <h2>Bronze Membership Benefits</h2>
   <p>✔ Access to networking events</p>
   <p>✔ Business listing in directory</p>
   <p>✔ Monthly training workshops</p>
-
-  <button onclick="document.getElementById('bronzeModal').close()">
-    Close
-  </button>
+  <button class="close-modal">Close</button>
 </dialog>
+
 <dialog id="silverModal">
   <h2>Silver Membership Benefits</h2>
   <p>✔ All Bronze benefits</p>
   <p>✔ Spotlight advertising opportunities</p>
   <p>✔ Discounts on chamber events</p>
-
-  <button onclick="document.getElementById('silverModal').close()">
-    Close
-  </button>
+  <button class="close-modal">Close</button>
 </dialog>
+
 <dialog id="goldModal">
   <h2>Gold Membership Benefits</h2>
   <p>✔ All Silver benefits</p>
   <p>✔ Featured homepage spotlight position</p>
   <p>✔ VIP access to exclusive events</p>
   <p>✔ Personalized business promotion</p>
+  <button class="close-modal">Close</button>
+</dialog>
 
-  <button onclick="document.getElementById('goldModal').close()">
-    Close
-  </button>
+
 </dialog>
 
 
@@ -231,10 +226,10 @@
     </footer>
 
     <script src="../scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js"></script>
-    <script src="scripts/dates.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/join.js" defer></script>
 
   </body>
