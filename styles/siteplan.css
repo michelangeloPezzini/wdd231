@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #6A0DAD;
+    --secondary-color: #FFFFFF;
+    --accent-color: #F2F2F2;
+    --text-color: #222222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* WIREFRAME STYLES */
+
+.wireframe {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid var(--primary-color);
+    margin-top: 10px;
+}
+
+.box {
+    border: 2px dashed var(--primary-color);
+    padding: 15px;
+    margin: 8px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.large {
+    height: 80px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33.33%;
+}
+
+
+/* Mobile wireframe forces vertical */
+.mobile .row {
+    flex-direction: column;
+}
