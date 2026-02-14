@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Chamber of Commerce | Discover</title>
+
+  <meta name="description" content="Discover Tokyo – attractions, culture, and opportunities.">
+  <meta name="author" content="Michelangelo Pezzini">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/discover.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="../images/logo.svg" alt="Tokyo Chamber Logo">
+      <span>Tokyo Chamber of Commerce</span>
+      <button id="menu" aria-label="Open Menu"></button>
+    </div>
+  </header>
+
+  <nav id="navMenu">
+    <a href="../index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="discover.html" class="active">Discover</a>
+    <a href="join.html">Join</a>
+  </nav>
+
+  <main>
+    <h1>Discover Tokyo</h1>
+
+    <div id="visit-message" class="visit-message"></div>
+
+    <section id="discover-grid" class="discover-grid">
+    </section>
+  </main>
+
+  <footer>
+    <p>Tokyo Chamber of Commerce</p>
+    <p>Tokyo – Japan</p>
+    <p>Email: info@tokyocc.org</p>
+    <p>© <span id="year"></span> | Michelangelo Pezzini | WDD 231</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js"></script>
+  <script src="scripts/discover.js" type="module"></script>
+</body>
+</html>

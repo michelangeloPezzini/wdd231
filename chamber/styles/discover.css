@@ -1,0 +1,84 @@
+.visit-message {
+  background: #222;
+  color: #f4ede4;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 1px solid #7b4ae2;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.card {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .discover-grid {
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6"
+      "c7"
+      "c8";
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c5 c6"
+      "c7 c8 c8";
+  }
+
+  .card img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+    transition: 0.3s ease;
+  }
+}
+
+.card1 { grid-area: c1; }
+.card2 { grid-area: c2; }
+.card3 { grid-area: c3; }
+.card4 { grid-area: c4; }
+.card5 { grid-area: c5; }
+.card6 { grid-area: c6; }
+.card7 { grid-area: c7; }
+.card8 { grid-area: c8; }
