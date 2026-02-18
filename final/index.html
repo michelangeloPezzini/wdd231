@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Michelangelo Photography — Capturing real moments through creative photography.">
+    <meta name="author" content="Michelangelo Pezzini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Michelangelo Photography">
+    <meta property="og:description" content="Photography portfolio by Michelangelo Pezzini">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Michelangelo Photography | Home</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/logo.svg" alt="Michelangelo Photography logo">
+        <span>Michelangelo Photography</span>
+        <button id="menu" aria-label="Toggle navigation"></button>
+    </div>
+</header>
+
+<nav id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<section class="hero">
+    <img src="images/og-image.jpeg" alt="Photography by Michelangelo">
+
+    <div class="hero-content">
+        <h1>Capturing Moments That Tell Stories</h1>
+        <a href="portfolio.html" class="cta">View Portfolio</a>
+    </div>
+</section>
+
+<div class="container">
+    <section class="profile">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Michelangelo portrait">
+        <p>
+            I'm a photographer based in Brazil who loves capturing authentic and emotional moments.
+            Photography started as a hobby and quickly became a passion that allows me to tell stories
+            through images and light.
+        </p>
+    </section>
+
+    <section class="weather-card">
+        <div id="weather">
+            <h2>📸 Shooting Conditions Today</h2>
+            <small class="weather-sub">Based on local weather data</small>
+
+            <p>Loading weather...</p>
+        </div>
+    </section>
+
+</div>
+
+</main>
+
+
+<footer>
+    <p>© <span id="year"></span> Michelangelo Photography</p>
+    <p id="lastModified"></p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="https://youtu.be/ibRStdyE27c" target="_blank">Video recording Final project</a></p>
+
+
+</footer>
+
+</body>
+</html>

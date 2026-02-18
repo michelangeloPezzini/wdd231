@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thank you for your message.">
+    <meta name="author" content="Michelangelo Pezzini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Michelangelo Photography</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<main class="container" style="text-align:center; padding-top: 3rem;">
+    <h1>Thank You!</h1>
+    <p>Your message has been received.</p>
+
+    <div id="formData" style="margin-top:2rem;"></div>
+
+    <a href="index.html" class="cta" style="margin-top:2rem; display:inline-block;">
+        Back to Home
+    </a>
+</main>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const name = params.get("name");
+const email = params.get("email");
+const message = params.get("message");
+
+document.getElementById("formData").innerHTML = `
+  <h2>Submitted Information</h2>
+  <p><strong>Name:</strong> ${name}</p>
+  <p><strong>Email:</strong> ${email}</p>
+  <p><strong>Message:</strong> ${message}</p>
+`;
+</script>
+
+</body>
+</html>

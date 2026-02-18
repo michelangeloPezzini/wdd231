@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Michelangelo Photography for collaborations or inquiries.">
+    <meta name="author" content="Michelangelo Pezzini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Contact | Michelangelo Photography">
+    <meta property="og:description" content="Get in touch with photographer Michelangelo Pezzini.">
+    <meta property="og:image" content="images/hero.jpg">
+
+    <title>Contact | Michelangelo Photography</title>
+
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/logo.svg" alt="Michelangelo Photography logo">
+        <span>Michelangelo Photography</span>
+        <button id="menu" aria-label="Toggle navigation"></button>
+    </div>
+</header>
+
+<nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html" class="active">Contact</a>
+</nav>
+
+<main class="container">
+
+    <h1>Contact Me</h1>
+    <p style="text-align:center; margin-bottom: 2rem;">
+        Feel free to reach out for collaborations, photography sessions, or just to connect.
+    </p>
+
+    <section class="contact-social">
+        <h2 class="contact-title">Find me online</h2>
+
+        <ul>
+            <li>
+                📸 Instagram:
+                <a href="https://www.instagram.com/michelangelo_pezzini/" target="_blank">
+                    @michelangelo_pezzini
+                </a>
+            </li>
+
+            <li>
+                💼 LinkedIn:
+                <a href="https://www.linkedin.com/in/michelangelo-pezzini-820591185/" target="_blank">
+                    View Profile
+                </a>
+            </li>
+
+            <li>
+                💻 GitHub:
+                <a href="https://github.com/michelangeloPezzini" target="_blank">
+                    michelangeloPezzini
+                </a>
+            </li>
+
+            <li>
+                ✉ Email:
+                <a href="mailto:lds.pezzini@gmail.com">
+                    lds.pezzini@gmail.com
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send a Message</h2>
+
+        <form action="thankyou.html" method="GET">
+
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© <span id="year"></span> Michelangelo Photography</p>
+    <p id="lastModified"></p>
+    <p><a href="attributions.html">Attributions</a></p>
+
+</footer>
+
+<script src="scripts/date.js" defer></script>
+</body>
+</html>

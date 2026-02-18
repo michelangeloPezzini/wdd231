@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Golden Sunset",
+    "category": "street",
+    "image": "images/1.heic",
+    "description": "An older man walking downtown on a sunny afternoon."
+  },
+  {
+    "id": 2,
+    "title": "Urban Lines",
+    "category": "detail",
+    "image": "images/2.heic",
+    "description": "Statue framed by blurred leaves and soft background light."
+  },
+  {
+    "id": 3,
+    "title": "Quiet Beach",
+    "category": "street",
+    "image": "images/3.heic",
+    "description": "Night street decorated with lights and people passing by."
+  },
+  {
+    "id": 4,
+    "title": "Street Story",
+    "category": "architecture",
+    "image": "images/4.heic",
+    "description": "Statue captured between flowers and architectural framing."
+  },
+  {
+    "id": 5,
+    "title": "Mountains",
+    "category": "lifestyle",
+    "image": "images/5.heic",
+    "description": "Surfer coming out of the water holding his board."
+  },
+  {
+    "id": 6,
+    "title": "Reflections",
+    "category": "street",
+    "image": "images/6.heic",
+    "description": "Bright orange car parked against a textured wall."
+  },
+  {
+    "id": 7,
+    "title": "Portrait Light",
+    "category": "wildlife",
+    "image": "images/7.heic",
+    "description": "Small owl resting quietly in the grass."
+  },
+  {
+    "id": 8,
+    "title": "Fog Road",
+    "category": "wildlife",
+    "image": "images/8.heic",
+    "description": "Bird perched on a thin branch surrounded by bokeh."
+  },
+  {
+    "id": 9,
+    "title": "Night City",
+    "category": "wildlife",
+    "image": "images/9.heic",
+    "description": "Bird standing on a tree trunk with a soft blue background."
+  },
+  {
+    "id": 10,
+    "title": "Coffee Moment",
+    "category": "architecture",
+    "image": "images/10.heic",
+    "description": "Church details captured through branches and warm light."
+  },
+  {
+    "id": 11,
+    "title": "Waves",
+    "category": "street",
+    "image": "images/11.heic",
+    "description": "People walking together under strong shadows and light."
+  },
+  {
+    "id": 12,
+    "title": "Old Street",
+    "category": "city",
+    "image": "images/12.heic",
+    "description": "Moon rising above a quiet city skyline at night."
+  },
+  {
+    "id": 13,
+    "title": "Golden Hour Portrait",
+    "category": "nature",
+    "image": "images/13.heic",
+    "description": "Small boat drifting across calm ocean waters."
+  },
+  {
+    "id": 14,
+    "title": "Forest Path",
+    "category": "street",
+    "image": "images/14.heic",
+    "description": "View from inside a bus looking through a rainy window."
+  },
+  {
+    "id": 15,
+    "title": "Minimal Lines",
+    "category": "minimal",
+    "image": "images/15.jpg",
+    "description": "Silhouette of a church tower against a dark sky."
+  }
+]
